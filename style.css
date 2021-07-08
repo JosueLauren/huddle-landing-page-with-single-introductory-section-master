@@ -28,8 +28,6 @@ div.conteudo {
     display: flex;
     width: 100%;
     height: auto;
-    
-    
 }
 
 div.logo {
@@ -121,4 +119,55 @@ div.sociais a {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    div.logo img {
+        width: 50%;
+    }
+
+    div.conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   section.layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    section.layout img {
+        width: 80%;
+        margin: auto;
+    }
+
+    section.descrição {
+        text-align: center;
+        width: 100%;
+    }
+
+    p.texto-descrição {
+        font-size: 17px;
+        color: white;
+    }
+
+    div.redes-sociais {
+        justify-content: center;
+    }
+
+    div.btn-registrar a {
+        padding: 10px 100px;
+    }
+
+
 }
