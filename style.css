@@ -1,3 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --oft-Magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(images/bg-desktop.svg) no-repeat center fixed;
+    background-size: contain;
+    background-color: var(--Violet);
+    
+}
+
+main.principal{
+    width: 100%;
+    height: auto;
+}
+
+div.conteudo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+div.logo {
+    margin: 50px;
+}
+
+section.layout {
+    width: 60%;
+    
+}
+
+section.layout img {
+    margin-left: 70px;
+}
+
+section.descrição {
+    width: 40%;
+    padding: 30px;
+    
+}
+
+h1.titulo-descrição {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+h2.sub-descrição {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+p.texto-descrição {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+div.btn-registrar a{
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 13px 60px;
+    background-color: white;
+    color: var(--Violet);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    font-family: "Poppins", sans-serif;
+}
+
+div.btn-registrar a:hover {
+    background-color: var(--oft-Magenta);
+    color: white;
+}
+
+div.redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 100px;
+}
+
+div.sociais {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+div.sociais:hover {
+    background-color: var(--oft-Magenta);
+    border: 1px solid var(--oft-Magenta);
+    cursor: pointer;
+}
+
+div.sociais a {
+    display: block;
+}
 
 .attribution { 
     font-size: 11px; 
